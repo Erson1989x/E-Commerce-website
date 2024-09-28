@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./common.css">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="section-container navbar-content">
+            <a class="logo-link" href="/index.html">
+                <h3> MyShop </h3>
+            </a>
+            <img class="navbar-cart-icon" src="./images/cart.svg" alt="cart icon" />
+        </div>
+    </nav>
+
+    <!-- Sidebar -->
+    <div class="sidebar-container">
+        <h3 class="sidebar-title"> Your Shopping Cart </h3>
+        <div class="cart-products-container"></div>
+        <p class="no-items-in-cart-text"> No items in cart </p>
+        <p> Total: $<span class="cart-total">0.00</span> </p>
+    </div>
+
+    <!-- Overlay -->
+    <div class="overlay"></div>
+
+    <!-- Search & Filters -->
+    <section class="section-container search-and-filter-section">
+        <div>
+            <h4 class="filters-section-title"> Filter by </h4>
+            <div class="filter-buttons-container">
+                <button value="none" class="filter-button"> none </button>
+                <button value="men's%20clothing" class="filter-button"> men's clothing </button>
+                <button value="jewelery" class="filter-button"> jewelery </button>
+                <button value="electronics" class="filter-button"> electronics </button>
+                <button value="women's%20clothing" class="filter-button"> women's clothing </button>
+            </div>
+        </div>
+        <div>
+            <h4 class="filters-section-title"> Search </h4>
+            <form class="search-product-form">
+                <input name="product-id" class="search-product-input" type="text" placeholder="Type product id..." />
+                <button class="search-product-button">
+                    <div class="spinner search-product-spinner"></div>
+                    <p class="search-product-button-text"> Show </p>
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <div class="spinner products-section-spinner"></div>
+
+    <!-- Cards section -->
+    <section class="section-container products-section">
+        <!-- <div class="product-card-container">
+            <div class="product-card-image"></div>
+            <div class="product-card-details">
+                <h3> Product lorem, ipsum dolor </h3>
+                <p class="product-card-description"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere voluptas sint cumque veritatis, harum quo? </p>
+                <p class="product-card-price"> $100 </p>
+            </div>
+            <button class="add-to-cart-button"> Add to cart </button>
+        </div> -->
+    </section>
+    
+    <script src="./script.js"></script>
+    <script src="./common.js"></script>
+</body>
+</html>
